@@ -1,6 +1,6 @@
 app:
   title: JanusIDP Showcase
-  baseUrl: http://localhost:3000
+  baseUrl: https://janusidp.duckdns.org
 
 organization:
   name: JanusIDP
