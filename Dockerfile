@@ -40,7 +40,10 @@ RUN \
     microdnf install -y yarn
 
 # Install gzip for tar and clean up
-RUN microdnf install -y gzip && microdnf clean all
+RUN microdnf install -y gzip python3 python3-pip && microdnf clean all
+
+# Install techdocs module
+RUN pip3 install mkdocs-techdocs-core==1.1.7
 
 # Switch to nodejs user
 USER 1001
